@@ -27,7 +27,7 @@
 
 
         <EditText
-            android:id="@+id/username_document"
+            android:id="@+id/username_document_register"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
@@ -60,12 +60,14 @@
             android:textSize="16sp" />
 
         <EditText
+            android:id="@+id/edit_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
             android:drawableStart="@drawable/baseline_lock_24"
             android:drawablePadding="4dp"
             android:hint="SENHA"
+            android:maxLength="6"
             android:inputType="textPassword"
             android:textSize="16sp"/>
 

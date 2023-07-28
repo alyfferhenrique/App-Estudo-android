@@ -28,13 +28,6 @@ class LoginViewModel (var userRepository : UserRepository): ViewModel() {
                     _loginview.value = BaseView(_object = data, message = "Autenticacao realizada com sucesso", success = true)
                 }
 
-
-
-
-
-
-
-
                 override fun onError(e: Throwable) {
                     if(e.message.isNullOrEmpty()) {
                         _loginview.value = BaseView(null, "Nao foi possivel realizar o login, meu trutão", false)

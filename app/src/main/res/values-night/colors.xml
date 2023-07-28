@@ -4,16 +4,15 @@
     <color name="white">#FFFFFFFF</color>
     <color name="Red">#F30B0B</color>
 
-    <color name="background">#FFFFFFFF</color>
+    <color name="background">#383838</color>
 
-    <color name="main_color_one">#FF1A1A</color>
-    <color name="main_color_two">#D62424</color>
+    <color name="main_color_one">#D40808</color>
+    <color name="main_color_two">#D40808</color>
     <color name="main_color_three">#D40808</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
-    <color name="color_icon">#BB0202</color>
-
-    <color name="title_color">#FF000000</color>
-    <color name="ic_loucher_background">#1d1d1d</color>
+    <color name="color_icon">#D40808</color>
+    <color name="title_color">#D40808</color>
+    <color name="ic_loucher_background">#FFFFFF</color>
 
 </resources>

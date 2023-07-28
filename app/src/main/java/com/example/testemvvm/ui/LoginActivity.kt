@@ -30,11 +30,9 @@ class LoginActivity : AppCompatActivity() {
 
         viewModel.getAll()
 
-        binding.ButtonCadastar.setOnClickListener{
-
+        binding.textRegister.setOnClickListener{
             val i = Intent(this, RegisterActivity :: class.java)
             startActivity(i)
-            finish()
         }
 
         binding.buttonEntrar.setOnClickListener{
@@ -73,6 +71,7 @@ class LoginActivity : AppCompatActivity() {
             if (it.success) {
                 this@LoginActivity.showToastLong(it.message)
                 // ir outra tela
+
             } else {
                 this@LoginActivity.showToastLong(it.message)
                 //Toast.makeText(this@LoginActivity, "ERROR", Toast.LENGTH_SHORT).show()

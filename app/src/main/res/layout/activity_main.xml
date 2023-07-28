@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/background"
     tools:context=".ui.LoginActivity">
 
     <TextView
@@ -22,6 +23,8 @@
         android:layout_margin="20dp"
         android:hint="CPF/CNPJ"
         android:inputType="number"
+        android:drawableStart="@drawable/baseline_person_24"
+        android:drawablePadding="4dp"
         android:id="@+id/edit_document"/>
 
 
@@ -30,6 +33,8 @@
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:hint="Senha"
+        android:drawableStart="@drawable/baseline_lock_24"
+        android:drawablePadding="4dp"
         android:id="@+id/edit_password"/>
 
     <androidx.appcompat.widget.AppCompatButton
@@ -41,13 +46,26 @@
         android:text="ENTRAR"
         android:textColor="@color/white"/>
 
-    <Button
-        android:id="@+id/Button_cadastar"
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:text="Cadastar"/>
+        android:gravity="center"
+        android:orientation="horizontal">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/has_register" />
 
+        <TextView
+            android:id="@+id/text_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register"
+            android:layout_marginStart="4dp"
+            android:textColor="@color/main_color_three" />
+
+    </LinearLayout>
 
 </LinearLayout>

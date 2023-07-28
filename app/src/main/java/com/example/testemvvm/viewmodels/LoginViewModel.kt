@@ -63,6 +63,5 @@ class LoginViewModel (var userRepository : UserRepository): ViewModel() {
             }
         })
     }
-
-    }
+}
 

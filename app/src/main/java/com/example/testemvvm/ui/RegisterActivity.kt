@@ -6,6 +6,7 @@ import com.example.testemvvm.R
 import com.example.testemvvm.data.models.RegisterModel
 import com.example.testemvvm.data.repositories.RegisterRepository
 import com.example.testemvvm.databinding.ActivityRegisterBinding
+import com.example.testemvvm.utilities.MaskUtil
 import com.example.testemvvm.utilities.showToastLong
 import com.example.testemvvm.viewmodels.RegisterViewModel
 
@@ -20,6 +21,8 @@ class RegisterActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         viewModel = RegisterViewModel(RegisterRepository())
+
+        binding.usernamePhone.addTextChangedListener(MaskUtil.insert(MaskUtil.CELLPHONE,binding.usernamePhone))
 
         binding.ButtonCadastar.setOnClickListener {
             val request = RegisterModel.Request(

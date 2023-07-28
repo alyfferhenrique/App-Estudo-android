@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">testeMvvm</string>
+    <string name="app_name">MVVM Estudo</string>
+    <string name="has_register">Não possuí conta?</string>
+    <string name="register">CADASTRE-SE</string>
 </resources>

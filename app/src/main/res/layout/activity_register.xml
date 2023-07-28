@@ -19,9 +19,8 @@
             android:layout_width="wrap_content"
             android:layout_height="60dp"
             android:layout_gravity="center"
-            android:layout_marginVertical="60dp"
+            android:layout_marginVertical="20dp"
             android:text="REALIZE SEU CADASTRO"
-            android:textColor="@color/black"
             android:textSize="20dp"
             android:textStyle="bold"
             android:typeface="normal" />
@@ -33,20 +32,20 @@
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
             android:drawablePadding="4dp"
+            android:drawableStart="@drawable/baseline_dock_24"
             android:hint="CPF/CNPJ"
             android:inputType="number"
-            android:textColor="#000000"
             android:textSize="16sp" />
 
         <EditText
             android:id="@+id/username_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:drawableStart="@drawable/baseline_person_24"
             android:layout_margin="20dp"
             android:drawablePadding="4dp"
             android:hint="NOME"
             android:inputType="text"
-            android:textColor="#000000"
             android:textSize="16sp" />
 
         <EditText
@@ -54,45 +53,54 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-
-
+            android:drawableStart="@drawable/baseline_email_24"
             android:drawablePadding="4dp"
             android:hint="EMAIL"
             android:inputType="text"
-            android:textColor="#000000"
             android:textSize="16sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:drawableStart="@drawable/baseline_lock_24"
+            android:drawablePadding="4dp"
+            android:hint="SENHA"
+            android:inputType="textPassword"
+            android:textSize="16sp"/>
 
         <EditText
             android:id="@+id/username_phone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:drawableStart="@drawable/baseline_phone_iphone_24"
             android:layout_margin="20dp"
             android:drawablePadding="4dp"
             android:hint="TELEFONE"
             android:inputType="number"
-            android:textColor="#000000"
             android:textSize="16sp" />
 
         <EditText
             android:id="@+id/username_birthdate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:drawableStart="@drawable/baseline_calendar_month_24"
             android:layout_margin="20dp"
             android:drawablePadding="4dp"
             android:hint="DATA DE NASCIMENTO"
             android:inputType="number"
-            android:textColor="#000000"
             android:textSize="16sp" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/Button_cadastar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="40dp"
-            android:layout_marginVertical="30dp"
-            android:text="CADASTRAR"
+            android:background="@drawable/background_button"
+            android:text="CADASTAR"
             android:textColor="@color/white"
-            android:textSize="17dp" />
+            android:layout_margin="20dp"/>
+
+
 
 
     </LinearLayout>
